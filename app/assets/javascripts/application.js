@@ -13,7 +13,7 @@
 //= require react
 //= require jquery
 //= require app
-//= require components
+//= require_tree ./components
 //= require_tree .
 
 $(function(){

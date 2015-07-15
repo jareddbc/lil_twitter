@@ -7,7 +7,7 @@ gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'react-rails'
 gem 'bower-rails'
-
+gem 'bcrypt'
 
 group :development, :test do
   gem 'pry-rails'

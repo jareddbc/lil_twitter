@@ -10,11 +10,34 @@ App.start = function(){
 };
 
 App.component = React.createClass({
+
+  getInitialState: function(){
+    return {
+      loggedIn: false
+    }
+  },
+
   render: function(){
-    return (
-      <div className="layout">
-        <Navbar />
-      </div>
-    );
+    if (this.state.loggedIn){
+      return (
+        <div className="layout">
+          <Navbar />
+        </div>
+      );
+    }else{
+      return (
+        <div className="layout">
+          <LoginOrSignup />
+        </div>
+      );
+    }
   }
 })
+
+
+
+App.signup = function(attributes){
+  User.create(attributes).then(function(user){
+    debugger;
+  });
+}
