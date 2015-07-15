@@ -11,6 +11,12 @@
 // about supported directives.
 //
 //= require react
+//= require jquery
+//= require app
 //= require components
-//= require react_ujs
 //= require_tree .
+
+$(function(){
+  App.start();
+});
+

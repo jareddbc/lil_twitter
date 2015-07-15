@@ -1,0 +1,9 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "jquery": "latest",
+    "eventmachine3": "latest"
+  },
+  "resolutions": {
+  }
+}
