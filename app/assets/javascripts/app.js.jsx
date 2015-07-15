@@ -17,6 +17,18 @@ App.component = React.createClass({
     }
   },
 
+  componentDidMount: function(){
+    Session.on('change', this.sessionUpdated)
+    Session.load();
+  },
+  componentWillUnmount: function(){
+    Session.off('change', this.sessionUpdated)
+  },
+
+  sessionUpdated: function(){
+    this.setState({loggedIn: !!Session.data.user_id});
+  },
+
   render: function(){
     if (this.state.loggedIn){
       return (
@@ -38,6 +50,9 @@ App.component = React.createClass({
 
 App.signup = function(attributes){
   User.create(attributes).then(function(user){
-    debugger;
+      Session.login({
+      email: attributes.email,
+      password: attributes.password,
+    });
   });
 }

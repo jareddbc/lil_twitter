@@ -39,7 +39,7 @@ UserControlsDropdown = React.createClass({
         <a href="" onClick={this.onClick}>User Controls ›</a>
         <div className="UserControlsDropdown-contents" style={style}>
           <a href="/settings">Settings</a>
-          <a href="/logout">Logout</a>
+          <LogoutButton>Logout</LogoutButton>
         </div>
       </div>
     );

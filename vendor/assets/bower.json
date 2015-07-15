@@ -1,9 +1,6 @@
 {
   "name": "dsl-generated dependencies",
   "dependencies": {
-    "jquery": "latest",
-    "eventmachine3": "latest"
-  },
-  "resolutions": {
+    "eventemitter3": "git://github.com/primus/eventemitter3"
   }
 }

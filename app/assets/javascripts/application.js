@@ -12,6 +12,7 @@
 //
 //= require react
 //= require jquery
+//= require eventemitter3
 //= require app
 //= require_tree ./components
 //= require_tree .
