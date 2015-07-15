@@ -12,8 +12,8 @@ App.start = function(){
 App.component = React.createClass({
   render: function(){
     return (
-      <div className="var">
-        <div>hello asdsdad</div>
+      <div className="layout">
+        <Navbar />
       </div>
     );
   }
